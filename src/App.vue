@@ -5,6 +5,7 @@
     <Everything />
     <HowWeWork />
     <CardList />
+    <NewsLetter />
   </main>
 </template>
 
@@ -15,8 +16,16 @@ import JumboComponent from "./components/JumboComponent.vue";
 import Everything from "./components/Everything.vue";
 import HowWeWork from "./components/HowWeWork.vue";
 import CardList from "./components/CardList.vue";
+import NewsLetter from "./components/NewsLetter.vue";
 export default {
-  components: { HeaderComponent, JumboComponent, Everything, HowWeWork, CardList },
+  components: {
+    HeaderComponent,
+    JumboComponent,
+    Everything,
+    HowWeWork,
+    CardList,
+    NewsLetter,
+  },
   data() {
     return {
       store,

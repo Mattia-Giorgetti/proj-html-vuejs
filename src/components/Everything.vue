@@ -29,17 +29,17 @@
             />
             <img
               class="everything_in_thirdPic"
-              src="../../public/images/maxcoach-shape-07-150x150.png"
+              src="/images/maxcoach-shape-07-150x150.png"
               alt="shape"
             />
             <img
               class="everything_in_forthPic"
-              src="../../public/images/maxcoach-shape-02.png"
+              src="/images/maxcoach-shape-02.png"
               alt="shape 2"
             />
             <img
               class="everything_in_fifthPic"
-              src="../../public/images/maxcoach-shape-08.png"
+              src="/images/maxcoach-shape-08.png"
               alt="shape 3"
             />
           </div>
@@ -89,7 +89,7 @@ export default {
     font-size: 2.2rem;
     span {
       color: $green;
-      font-weight: 400;
+      font-weight: 300;
     }
   }
   p {

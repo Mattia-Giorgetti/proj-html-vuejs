@@ -21,7 +21,7 @@ export default {
 @use '../assets/styles/partials/variables' as *;
 
 .jumbo {
-  background-image: url(../../public/images/home-3-hero-bg.jpg);
+  background-image: url(/images/home-3-hero-bg.jpg);
   height: 500px;
   background-size: cover;
 

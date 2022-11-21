@@ -11,12 +11,12 @@
             />
             <img
               class="how_we_secondPic"
-              src="../../public/images/icon-youtube-play.png"
+              src="/images/icon-youtube-play.png"
               alt="yt-logo"
             />
             <img
               class="how_we_thirdPic"
-              src="../../public/images/maxcoach-shape-05-150x150.png"
+              src="/images/maxcoach-shape-05-150x150.png"
               alt="shape"
             />
             <img
@@ -24,7 +24,7 @@
               src="/images/maxcoach-shape-07-150x150.png"
               alt="shape 2"
             />
-            <img class="how_we_fifthPic" src="../../public/images/svg-0.svg" alt="shape 3" />
+            <img class="how_we_fifthPic" src="/images/svg-0.svg" alt="shape 3" />
           </div>
         </div>
         <div class="col-lg-4 me-5">
@@ -74,7 +74,7 @@ export default {
     font-size: 2.2rem;
     span {
       color: $green;
-      font-weight: 400;
+      font-weight: 300;
     }
   }
   p {
@@ -114,12 +114,11 @@ export default {
       z-index: -4;
     }
     .how_we_fifthPic {
-        position: absolute;
-        top: -65px;
-        left: -45px;
-        z-index: -10;
+      position: absolute;
+      top: -65px;
+      left: -45px;
+      z-index: -10;
     }
-  
   }
 }
 </style>
