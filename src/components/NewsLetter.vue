@@ -73,6 +73,11 @@ button {
   font-weight: 600;
   color: $white;
   border-radius: 0 5px 5px 0;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: $purple;
+  }
 }
 .news_img_1 {
   position: absolute;

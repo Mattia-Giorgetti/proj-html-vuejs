@@ -9,7 +9,7 @@
               <a :href="item.url">{{ item.content }}</a>
             </li>
           </ul>
-          <div class="text-secondary fs-5 d-flex gap-3">
+          <div class="fs-5 d-flex gap-3">
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
@@ -52,6 +52,15 @@ export default {
 
 section {
   background-color: $cinder;
+  i {
+    color: gray;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $green;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
   h4 {
     font-size: 1rem;
   }
@@ -64,6 +73,10 @@ section {
       text-decoration: none;
       color: gray;
       font-size: 0.7rem;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $green;
+      }
     }
   }
   p {

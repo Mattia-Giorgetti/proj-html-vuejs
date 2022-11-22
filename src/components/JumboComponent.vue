@@ -1,5 +1,5 @@
 <template>
-  <div class="jumbo">
+  <div class="jumbo mt-5">
     <div class="d-flex flex-column justify-content-center align-items-center h-100">
       <h2>Commence Business</h2>
       <h1>Distant Mentoring Program</h1>
@@ -22,7 +22,8 @@ export default {
 
 .jumbo {
   background-image: url(/images/home-3-hero-bg.jpg);
-  height: 500px;
+  background-position: center;
+  height: 550px;
   background-size: cover;
 
   h2 {

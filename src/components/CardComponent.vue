@@ -101,6 +101,11 @@ div.position-relative:hover img {
 p {
   font-size: 0.9rem;
   font-weight: 600;
+  transition: all 0.4s ease;
+  &:hover {
+    color: $green;
+    cursor: pointer;
+  }
 }
 span {
   font-size: 0.7rem;
