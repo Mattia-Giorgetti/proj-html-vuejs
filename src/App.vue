@@ -4,8 +4,26 @@
   <main>
     <Everything />
     <HowWeWork />
-    <CardList />
+    <section id="courses">
+      <CardList
+        :List="store.courses"
+        Subtitle="Join Maxcoach at best"
+        Title="Latest Online"
+        titleSpan="Courses"
+      />
+    </section>
+    <Testimonials />
+    <TransformYou />
+    <section id="blogs">
+      <CardList
+        :List="store.blogs"
+        Subtitle="Read for more joyment"
+        Title="Latest From"
+        titleSpan="Our Blogs"
+      />
+    </section>
     <NewsLetter />
+    <FooterComponent />
   </main>
 </template>
 
@@ -17,6 +35,9 @@ import Everything from "./components/Everything.vue";
 import HowWeWork from "./components/HowWeWork.vue";
 import CardList from "./components/CardList.vue";
 import NewsLetter from "./components/NewsLetter.vue";
+import FooterComponent from "./components/FooterComponent.vue";
+import Testimonials from "./components/Testimonials.vue";
+import TransformYou from "./components/TransformYou.vue";
 export default {
   components: {
     HeaderComponent,
@@ -25,6 +46,9 @@ export default {
     HowWeWork,
     CardList,
     NewsLetter,
+    FooterComponent,
+    Testimonials,
+    TransformYou,
   },
   data() {
     return {
@@ -36,4 +60,11 @@ export default {
 
 <style lang="scss" scoped>
 @use './assets/styles/partials/variables' as *;
+#courses {
+  background: linear-gradient(180deg, white 70%, $lightgray);
+}
+#blogs {
+  padding-top: 1rem;
+  background-color: $lightgray;
+}
 </style>

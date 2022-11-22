@@ -50,6 +50,11 @@ li a {
   text-decoration: none;
   color: $black;
   font-size: 0.8rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $green;
+  }
 }
 .searchbar {
   input {
@@ -60,21 +65,41 @@ li a {
     width: 90%;
     font-size: 0.8rem;
     border-radius: 6px 0 0 6px;
+    transition: all 0.3s ease;
+    &:focus {
+      background-color: white;
+    }
   }
   button {
     background-color: $lightgray;
     border: none;
     height: 32px;
     border-radius: 0 6px 6px 0;
-
+    transition: all 0.3s ease;
+    &:hover {
+      color: $white;
+      background-color: $green;
+    }
+    &:hover i {
+      color: $white;
+    }
     i {
       font-size: 0.8rem;
+      display: block;
       font-weight: bold;
       color: $green;
+      transition: all 0.3s ease;
     }
   }
 }
 .right_header {
+  i {
+    transition: all 0.3s ease;
+  }
+  i:hover {
+    color: $green;
+    cursor: pointer;
+  }
   .cart-counter {
     position: absolute;
     text-align: center;

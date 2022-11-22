@@ -17,6 +17,7 @@
         </div>
         <div class="col-lg-6">
           <div class="position-relative">
+            <div class="circleShape"></div>
             <img
               class="everything_in_firstPic"
               src="/images/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg"
@@ -136,6 +137,16 @@ export default {
     left: 10px;
     bottom: -4px;
     z-index: -4;
+  }
+  .circleShape {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 6px solid $goldrose;
+    position: absolute;
+    top: 0;
+    left: -140px;
   }
 }
 

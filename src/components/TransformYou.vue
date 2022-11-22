@@ -1,18 +1,14 @@
 <template>
-  <section id="howwework">
+  <section id="TransformSection" class="pb-4">
     <div class="container-sm p-5">
       <div class="row justify-content-between p-4">
         <div class="col-lg-6">
-          <div class="yt-thumb position-relative">
-            <img
-              class="how_we_firstPic img-fluid"
-              src="/images/stock-full-hd-11-670x450.jpg"
-              alt="girl-phone"
-            />
+          <div class="team_pic position-relative">
+            <img class="how_we_firstPic" src="/images/home-3-team-image.png" alt="team" />
             <img
               class="how_we_secondPic"
-              src="/images/icon-youtube-play.png"
-              alt="yt-logo"
+              src="/images/maxcoach-shape-01.png"
+              alt="shape1"
             />
             <img
               class="how_we_thirdPic"
@@ -36,21 +32,17 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 me-5 position-relative align-self-center">
+        <div class="col-lg-4 me-5 align-self-center position-relative">
           <div class="circleShape"></div>
-          <h3>How we Work</h3>
-          <h2>Upgrade Your Skills <span>Upgrade Your Life</span></h2>
+          <h3>Everything in <span class="fw-bold">Maxcoach</span></h3>
+          <h2>We're Here To <span>Transform </span>You!</h2>
           <p>
             Opening up more opportunities in front of you to get the ticket to more
             enjoyable door in life. Getting equipped with new skills for new sets of
             insight into your career. MaxCoach accompany learners in every stage of
             learning.
           </p>
-          <div class="everything_question">
-            <a href="#"
-              >Download free guidebook <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
+          <button>Get Free Guide</button>
         </div>
       </div>
     </div>
@@ -60,7 +52,7 @@
 <script>
 import { store } from "../store";
 export default {
-  name: "HowWeWork",
+  name: "TransformYou",
   data() {
     return {
       store,
@@ -71,6 +63,7 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
+
 .circleShape {
   background-color: white;
   width: 50px;
@@ -78,8 +71,8 @@ export default {
   border-radius: 50%;
   border: 6px solid $goldrose;
   position: absolute;
-  top: -60px;
-  left: 0;
+  top: -80px;
+  left: -30px;
 }
 
 .row {
@@ -107,38 +100,54 @@ export default {
     font-size: 0.7rem;
     font-weight: 600;
   }
-  .yt-thumb {
+  button {
+    color: $white;
+    background-color: $green;
+    margin-top: 1.5rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $purple;
+    }
+  }
+  .team_pic {
     .how_we_firstPic {
-      width: 100%;
+      width: 90%;
       border-radius: 5px;
     }
     .how_we_secondPic {
-      width: 80px;
+      width: 100px;
       position: absolute;
-      top: 50%;
-      left: 50%;
+      bottom: 0;
+      left: -10%;
       transform: translate(-50%, -50%);
     }
     .how_we_thirdPic {
       position: absolute;
       width: 26%;
-      top: 40px;
-      left: -80px;
+      bottom: 150px;
+      left: -65px;
       z-index: -4;
     }
     .how_we_forthPic {
       width: 28%;
       position: absolute;
       bottom: -65px;
-      right: -18px;
+      right: 35%;
       z-index: -4;
     }
     .how_we_fifthPic {
-      color: $lightgray;
+      color: $green;
+      opacity: 0.5;
       width: 20%;
       position: absolute;
-      top: -65px;
-      left: -45px;
+      top: 45px;
+      left: -15px;
       z-index: -10;
     }
   }

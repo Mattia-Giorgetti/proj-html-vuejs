@@ -1,7 +1,8 @@
 <template>
-  <section id="newsletter">
-    <div class="container-sm p-5 row justify-content-center position-relative">
-      <div class="col-sm-6 text-center">
+  <section id="newsletter" class="py-4">
+    <div class="container-sm p-5 d-flex justify-content-center position-relative">
+      <div class="circleShape"></div>
+      <div class="text-center w-50">
         <h2>Subscribe <span>Newsletters</span></h2>
         <p>
           Enter your email address to register to our newsletter subscription delivered on
@@ -32,6 +33,17 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
+.circleShape {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 6px solid $green;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 40%;
+  left: 0;
+}
 
 h2 {
   font-weight: 600;
