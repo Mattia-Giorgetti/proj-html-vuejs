@@ -1,6 +1,6 @@
 <template>
   <section id="testimonials" class="pt-4">
-    <div class="container-sm p-5 mt-5">
+    <div class="container-sm p-5 pb-sm-0 pb-lg-5 mt-lg-5 mt-sm-0">
       <div class="row justify-content-between p-4">
         <div class="col-lg-4">
           <h3>Testimonials</h3>
@@ -13,7 +13,7 @@
             <a href="#">View all <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="col-lg-7 position-relative">
+        <div class="col-lg-7 position-relative d-none d-lg-block">
           <div v-for="(item, index) in store.testimonials" :key="index">
             <TestimonialCard :item="item" :index="index" />
           </div>

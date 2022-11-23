@@ -38,8 +38,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 me-5 position-relative align-self-center">
-          <div class="circleShape"></div>
+        <div class="col-lg-4 me-5 position-relative align-self-center mt-sm-5 mt-lg-0">
+          <div class="circleShape d-none d-md-block"></div>
           <h3>How we Work</h3>
           <h2>Upgrade Your Skills <span>Upgrade Your Life</span></h2>
           <p>

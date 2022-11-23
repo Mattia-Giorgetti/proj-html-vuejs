@@ -1,6 +1,6 @@
 <template>
   <section id="TransformSection" class="pb-4">
-    <div class="container-sm p-5">
+    <div class="container-sm p-5 pt-sm-0 pt-lg-5">
       <div class="row justify-content-between p-4">
         <div class="col-lg-6">
           <div class="team_pic position-relative">
@@ -32,7 +32,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 me-5 align-self-center position-relative">
+        <div class="col-lg-4 me-5 align-self-center position-relative mt-sm-5 mt-lg-0">
           <div class="circleShape"></div>
           <h3>Everything in <span class="fw-bold">Maxcoach</span></h3>
           <h2>We're Here To <span>Transform </span>You!</h2>

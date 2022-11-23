@@ -2,7 +2,7 @@
   <div class="jumbo mt-5">
     <div class="d-flex flex-column justify-content-center align-items-center h-100">
       <h2>Commence Business</h2>
-      <h1>Distant Mentoring Program</h1>
+      <h1 class="text-center">Distant Mentoring Program</h1>
       <button>
         Download free guidebook
         <i class="fa-solid fa-arrow-right ps-1"></i>

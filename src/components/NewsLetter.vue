@@ -10,7 +10,7 @@
         </p>
         <div>
           <input type="text" placeholder="Enter your email" />
-          <button>Subscribe</button>
+          <button class="d-none d-lg-inline-block">Subscribe</button>
         </div>
       </div>
       <img class="news_img_1" src="/images/maxcoach-shape-02.png" alt="shape2" />

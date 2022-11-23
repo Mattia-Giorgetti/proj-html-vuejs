@@ -1,6 +1,6 @@
 <template>
   <header class="px-5 d-flex justify-content-between align-items-center">
-    <nav>
+    <nav class="d-none d-lg-block">
       <ul
         class="list-unstyled d-flex justify-content-between align-items-center mb-0 gap-4"
       >

@@ -16,7 +16,7 @@
             <i class="fa-brands fa-linkedin"></i>
           </div>
         </div>
-        <div class="col-lg-6 d-flex gap-5">
+        <div class="col-lg-6 d-flex gap-5 mt-sm-5 mt-lg-0">
           <div v-for="(item, index) in store.footerlinks" :key="index">
             <h4 class="text-white">{{ item.title }}</h4>
             <ul :class="{ 'mt-4': item.title == '' }">

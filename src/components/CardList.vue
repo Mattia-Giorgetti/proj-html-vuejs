@@ -162,6 +162,9 @@ h2 {
 .my-col {
   width: calc(100% / 3 - 2.3rem);
   border-radius: 8px;
+  @media screen and (max-width: 768px) {
+    width: calc(100%);
+  }
 }
 .white_bg {
   background-color: $white;

@@ -2,7 +2,7 @@
   <section id="everything_in">
     <div class="container-sm p-5 mt-5">
       <div class="row justify-content-between p-4">
-        <div class="col-lg-4">
+        <div class="col-lg-4 mb-sm-5 mb-lg-0">
           <h3>Everything in <span class="fw-bold">Maxcoach</span></h3>
           <h2>Learn about our <span>Work Culture</span> at MaxCoach</h2>
           <p>
@@ -15,7 +15,7 @@
             <a href="#">Get Free Guide <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 mt-sm-5 mt-lg-0">
           <div class="position-relative">
             <div class="circleShape"></div>
             <img
