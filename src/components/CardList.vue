@@ -21,8 +21,8 @@
     <div class="dots d-flex justify-content-center gap-3" v-if="List === store.courses">
       <div @click="swipeLeft"></div>
       <div @click="swipeRight"></div>
-      <div></div>
-      <div></div>
+      <div @click="swipeRight"></div>
+      <div @click="swipeRight"></div>
     </div>
     <div class="d-flex justify-content-center" v-if="List === store.courses">
       <div class="w-50 pt-3 control">
@@ -99,11 +99,11 @@ export default {
     },
     swipeLeft() {
       const content = this.$refs.content;
-      this.scrollTo(content, -900, 1200);
+      this.scrollTo(content, -1200, 1200);
     },
     swipeRight() {
       const content = this.$refs.content;
-      this.scrollTo(content, 900, 1200);
+      this.scrollTo(content, 400, 800);
     },
   },
 };

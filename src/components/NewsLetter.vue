@@ -33,6 +33,20 @@ export default {
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
+div.container-sm {
+  &:hover .circleShape {
+    bottom: 46%;
+    left: 60px;
+  }
+  &:hover .news_img_1 {
+    bottom: 40px;
+    right: 10px;
+  }
+  &:hover .news_img_2 {
+    top: 10px;
+    right: 60px;
+  }
+}
 .circleShape {
   background-color: white;
   width: 50px;
@@ -43,6 +57,7 @@ export default {
   position: absolute;
   bottom: 40%;
   left: 0;
+  transition: all 0.8s ease;
 }
 
 h2 {
@@ -84,11 +99,13 @@ button {
   width: 10%;
   bottom: 60px;
   right: 40px;
+  transition: all 0.8s ease;
 }
 .news_img_2 {
   position: absolute;
   width: 15%;
   top: 30px;
   right: 40px;
+  transition: all 0.8s ease;
 }
 </style>

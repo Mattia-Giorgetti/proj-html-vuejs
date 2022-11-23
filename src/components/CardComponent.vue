@@ -1,5 +1,5 @@
 <template>
-  <div class="position-relative overflow-hidden">
+  <div class="card_pic position-relative overflow-hidden">
     <div class="free-tag" v-if="item.h4 === '$0.00'">free</div>
     <img
       class="img-fluid"
@@ -7,7 +7,7 @@
       :src="item.img"
     />
   </div>
-  <div class="p-3">
+  <div class="p-3 position-relative card_info">
     <h4 :class="item.color ? 'greenText' : 'blackText'">{{ item.h4 }}</h4>
     <p>{{ item.p }}</p>
     <div class="d-flex align-items-center gap-4">
@@ -22,6 +22,9 @@
         ><i class="fa-regular pe-1" :class="item.color ? 'fa-user' : 'fa-eye'"></i>
         {{ item.span2 }}</span
       >
+      <div class="add" @click="addCart" v-if="item.color">
+        <i class="fa-solid fa-plus"></i>
+      </div>
     </div>
   </div>
 </template>
@@ -38,15 +41,51 @@ export default {
       store,
     };
   },
+  methods: {
+    addCart() {
+      store.cartCounter.push(this.item.p);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-div.position-relative img {
+.add {
+  position: absolute;
+  right: 0px;
+  top: 150px;
+  z-index: 999;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%),
+    0 3px 1px -2px rgb(0 0 0 / 20%);
+  display: block;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 25px;
+  line-height: 38px;
+  cursor: pointer;
+  opacity: 0;
+  color: $white;
+  background-color: $green;
+  transition: all 0.3s ease;
+  i {
+    font-size: 1rem;
+  }
+}
+.card_info {
+  &:hover .add {
+    opacity: 1;
+    right: 10px;
+    top: 90px;
+  }
+}
+div.card_pic img {
   transition: all 0.7s ease-in;
 }
-div.position-relative:hover img {
+div.card_pic:hover img {
   transform: scale(1.1);
   cursor: pointer;
 }

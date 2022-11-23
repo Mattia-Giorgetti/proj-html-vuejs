@@ -79,6 +79,18 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 .row {
+  &:hover .everything_in_thirdPic {
+    top: -25%;
+    right: 20%;
+  }
+  &:hover .everything_in_forthPic {
+    bottom: -90px;
+    right: 80px;
+  }
+  &:hover .circleShape {
+    top: 50px;
+    left: -180px;
+  }
   h3 {
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -128,12 +140,14 @@ export default {
     right: 10%;
     width: 120px;
     z-index: -2;
+    transition: all 0.8s ease;
   }
   .everything_in_forthPic {
     width: 20%;
     position: absolute;
     bottom: -70px;
     right: 110px;
+    transition: all 0.8s ease;
   }
   .everything_in_fifthPic {
     position: absolute;
@@ -141,6 +155,7 @@ export default {
     left: 10px;
     bottom: -4px;
     z-index: -4;
+    transition: all 0.8s ease;
   }
   .circleShape {
     background-color: white;
@@ -151,6 +166,7 @@ export default {
     position: absolute;
     top: 0;
     left: -140px;
+    transition: all 0.8s ease;
   }
 }
 

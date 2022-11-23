@@ -73,9 +73,14 @@ export default {
   position: absolute;
   top: -80px;
   left: -30px;
+  transition: all 0.3s ease;
 }
 
 .row {
+  &:hover .circleShape {
+    top: -60px;
+    left: -50px;
+  }
   h3 {
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -116,6 +121,22 @@ export default {
     }
   }
   .team_pic {
+    &:hover .how_we_secondPic {
+      bottom: 20px;
+      left: -14%;
+    }
+    &:hover .how_we_thirdPic {
+      bottom: 140px;
+      left: -75px;
+    }
+    &:hover .how_we_forthPic {
+      bottom: -85px;
+      right: 30%;
+    }
+    &:hover .how_we_fifthPic {
+      top: 30px;
+      left: -55px;
+    }
     .how_we_firstPic {
       width: 90%;
       border-radius: 5px;
@@ -126,6 +147,7 @@ export default {
       bottom: 0;
       left: -10%;
       transform: translate(-50%, -50%);
+      transition: all 0.8s ease;
     }
     .how_we_thirdPic {
       position: absolute;
@@ -133,6 +155,7 @@ export default {
       bottom: 150px;
       left: -65px;
       z-index: -4;
+      transition: all 0.8s ease;
     }
     .how_we_forthPic {
       width: 28%;
@@ -140,6 +163,7 @@ export default {
       bottom: -65px;
       right: 35%;
       z-index: -4;
+      transition: all 0.8s ease;
     }
     .how_we_fifthPic {
       color: $green;
@@ -149,6 +173,7 @@ export default {
       top: 45px;
       left: -15px;
       z-index: -10;
+      transition: all 0.8s ease;
     }
   }
 }

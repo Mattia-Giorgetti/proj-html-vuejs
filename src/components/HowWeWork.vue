@@ -82,9 +82,13 @@ export default {
   position: absolute;
   top: -60px;
   left: 0;
+  transition: all 0.8s ease;
 }
-
 .row {
+  &:hover .circleShape {
+    top: -100px;
+    left: 40px;
+  }
   h3 {
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -114,6 +118,18 @@ export default {
     }
   }
   .yt-thumb {
+    &:hover .how_we_thirdPic {
+      top: 60px;
+      left: -120px;
+    }
+    &:hover .how_we_forthPic {
+      bottom: -75px;
+      right: -48px;
+    }
+    &:hover .how_we_fifthPic {
+      top: -85px;
+      left: -65px;
+    }
     .overflow-hidden img {
       transition: all 0.8s ease;
 
@@ -139,6 +155,7 @@ export default {
       top: 40px;
       left: -80px;
       z-index: -4;
+      transition: all 0.8s ease;
     }
     .how_we_forthPic {
       width: 28%;
@@ -146,6 +163,7 @@ export default {
       bottom: -65px;
       right: -18px;
       z-index: -4;
+      transition: all 0.8s ease;
     }
     .how_we_fifthPic {
       color: $lightgray;
@@ -154,6 +172,7 @@ export default {
       top: -65px;
       left: -45px;
       z-index: -10;
+      transition: all 0.8s ease;
     }
   }
 }
