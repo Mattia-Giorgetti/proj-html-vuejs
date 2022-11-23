@@ -121,6 +121,9 @@ export default {
     text-decoration: none;
     color: $black;
     font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 .dots {

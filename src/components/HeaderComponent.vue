@@ -91,10 +91,13 @@ header {
   opacity: 1;
   color: $white;
   background-color: #1972f5;
-
+  transition: all 0.4s ease;
   i {
     transform: rotate(-10deg);
     font-size: 1.5rem;
+  }
+  &:hover {
+    transform: translateX(-10px);
   }
 }
 .scroll-up {
@@ -116,8 +119,12 @@ header {
   opacity: 1;
   color: $white;
   background-color: $green;
+  transition: all 0.4s ease;
   i {
     font-size: 1.3rem;
+  }
+  &:hover {
+    transform: translateY(-10px);
   }
 }
 

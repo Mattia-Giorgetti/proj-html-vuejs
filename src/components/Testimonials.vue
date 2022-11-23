@@ -1,5 +1,5 @@
 <template>
-  <section id="testimonials">
+  <section id="testimonials" class="pt-4">
     <div class="container-sm p-5 mt-5">
       <div class="row justify-content-between p-4">
         <div class="col-lg-4">
@@ -13,23 +13,9 @@
             <a href="#">View all <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="position-relative">
-            <div class="testimonial_card rounded-1 p-4 me-5">
-              <h4>Professional team of specialists and passionate mentors at reach</h4>
-              <p>
-                I need to get a certification for English proficiency and MaxCoach is my
-                best choice. Their tutors are smart and professional when dealing with
-                students.
-              </p>
-              <div class="d-flex gap-3">
-                <img src="/images/testimonial-avata-01.jpg" alt="avatar1" />
-                <div>
-                  <h4 class="mb-1 text-uppercase">Madley Pondor</h4>
-                  <p>/ IT Specialist</p>
-                </div>
-              </div>
-            </div>
+        <div class="col-lg-7 position-relative">
+          <div v-for="(item, index) in store.testimonials" :key="index">
+            <TestimonialCard :item="item" :index="index" />
           </div>
         </div>
       </div>
@@ -38,8 +24,16 @@
 </template>
 
 <script>
+import { store } from "../store";
+import TestimonialCard from "./TestimonialCard.vue";
 export default {
   name: "Testimonials",
+  components: { TestimonialCard },
+  data() {
+    return {
+      store,
+    };
+  },
 };
 </script>
 
@@ -48,7 +42,7 @@ export default {
 
 .row {
   height: 350px;
-  align-items: center;
+  align-items: flex-start;
   h3 {
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -72,24 +66,9 @@ export default {
     color: $black;
     font-size: 0.7rem;
     font-weight: 600;
-  }
 
-  .testimonial_card {
-    box-shadow: -4px 4px 100px $lightgray;
-    height: 260px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    h4 {
-      font-size: 0.9rem;
-    }
-    p {
-      font-size: 0.8rem;
-    }
-    img {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

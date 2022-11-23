@@ -4,11 +4,13 @@
       <div class="row justify-content-between p-4">
         <div class="col-lg-6">
           <div class="yt-thumb position-relative">
-            <img
-              class="how_we_firstPic img-fluid"
-              src="/images/stock-full-hd-11-670x450.jpg"
-              alt="girl-phone"
-            />
+            <div class="overflow-hidden">
+              <img
+                class="how_we_firstPic img-fluid"
+                src="/images/stock-full-hd-11-670x450.jpg"
+                alt="girl-phone"
+              />
+            </div>
             <img
               class="how_we_secondPic"
               src="/images/icon-youtube-play.png"
@@ -106,8 +108,20 @@ export default {
     color: $black;
     font-size: 0.7rem;
     font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .yt-thumb {
+    .overflow-hidden img {
+      transition: all 0.8s ease;
+
+      &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
     .how_we_firstPic {
       width: 100%;
       border-radius: 5px;

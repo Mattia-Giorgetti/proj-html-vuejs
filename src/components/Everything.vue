@@ -106,6 +106,10 @@ export default {
       color: $green;
       font-size: 0.7rem;
       font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .everything_in_firstPic {
